@@ -33,8 +33,8 @@ export const PricingSection = () => {
                 Oferta por Tempo Limitado
               </Badge>
               <div className="mb-4">
-                <span className="text-2xl text-ebook-text/50 line-through">{data.pricing.from}</span>
-                <span className="text-4xl font-bold text-ebook-primary ml-4">{data.pricing.by}</span>
+                <span className="text-2xl text-ebook-text/50 line-through">{data.guia.pricing.from}</span>
+                <span className="text-4xl font-bold text-ebook-primary ml-4">{data.guia.pricing.by}</span>
               </div>
               <p className="text-ebook-text/70">Acesso imediato ao E-Book + bônus</p>
             </div>
@@ -51,7 +51,7 @@ export const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-xl py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4"
-              onClick={() => window.open(data.buy_link, "_blank")}
+              onClick={() => window.open(data.guia.buy_link, "_blank")}
             >
               <ShoppingCart className="mr-2" size={24} />
               Comprar Agora

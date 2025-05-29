@@ -15,7 +15,7 @@ export const FinalCTASection = () => {
           </h2>
           
           <p className="text-xl text-ebook-text/80 mb-8 leading-relaxed">
-            Não perca tempo! Garante agora o guia que vai transformar a alimentação do seu bebê 
+            Não perca tempo! Garante agora o e-book de receitas que vai transformar a alimentação do seu bebê 
             e dar a você a confiança que precisa nesta jornada tão importante.
           </p>
 
@@ -34,9 +34,9 @@ export const FinalCTASection = () => {
           <Button 
             size="lg" 
             className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-2xl px-12 py-8 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open(data.buy_link, "_blank")}
+            onClick={() => window.open(data.receitas.buy_link, "_blank")}
           >
-            Adquira por {data.pricing.by}
+            Adquira por {data.receitas.pricing.by}
           </Button>
 
           <p className="text-sm text-ebook-text/60 mt-4">

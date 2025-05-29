@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-ebook-background">
-              Guia de Introdução Alimentar
+              Meu Nenê Comilão
             </h3>
             <p className="text-ebook-background/70">
               Transformando a alimentação infantil com informação de qualidade e confiança para os pais.

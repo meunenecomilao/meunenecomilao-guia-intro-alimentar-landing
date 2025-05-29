@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open(data.buy_link, "_blank")}
+              onClick={() => window.open(data.guia.buy_link, "_blank")}
             >
               Adquira o Guia Agora
             </Button>
