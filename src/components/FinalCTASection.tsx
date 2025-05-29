@@ -36,7 +36,7 @@ export const FinalCTASection = () => {
             className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-2xl px-12 py-8 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
             onClick={() => window.open(data.buy_link, "_blank")}
           >
-            Adquira Agora por {data.pricing.by}
+            Adquira por {data.pricing.by}
           </Button>
 
           <p className="text-sm text-ebook-text/60 mt-4">

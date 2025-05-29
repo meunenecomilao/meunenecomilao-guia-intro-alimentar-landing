@@ -1,6 +1,5 @@
 
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 
 import data from '@/data.json';
 
@@ -11,9 +10,6 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
-            <Badge className="bg-ebook-secondary text-ebook-text border-ebook-primary">
-              Aprovado por centenas de mamães!
-            </Badge>
             
             <h1 className="text-4xl md:text-6xl font-bold text-ebook-text leading-tight">
               Transforme a{' '}
