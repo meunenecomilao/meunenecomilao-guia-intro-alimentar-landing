@@ -1,5 +1,6 @@
 
 import { HeroSection } from '@/components/HeroSection';
+import { ChallengesSection } from '@/components/ChallengesSection'
 import { ProblemSolutionSection } from '@/components/ProblemSolutionSection';
 import { EbookDetailsSection } from '@/components/EbookDetailsSection';
 import { BenefitsSection } from '@/components/BenefitsSection';
@@ -14,7 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-ebook-background">
       <HeroSection />
-      <ProblemSolutionSection />
+      <ChallengesSection />
       <EbookDetailsSection />
       <BenefitsSection />
       <TestimonialsSection />

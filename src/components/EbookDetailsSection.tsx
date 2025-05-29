@@ -3,13 +3,20 @@ import { CheckCircle } from 'lucide-react';
 
 export const EbookDetailsSection = () => {
   const features = [
-    "Plano completo para introdução alimentar de 6 meses a 2 anos",
-    "Receitas simples e nutritivas para bebês",
-    "Dicas para identificar e evitar alergias alimentares",
-    "Estratégias para lidar com recusas e engasgos",
-    "Cronograma de alimentos por idade",
-    "Lista de compras organizada por fase",
-    "Orientações para transição para alimentos sólidos"
+    "Como iniciar corretamente a introdução alimentar",
+    "Como lidar com emoções, dúvidas e medos",
+    "Quais métodos alimentares existentes",
+    "Como prevenir ou reverter um possível engasgo",
+    "Os sinais de prontidão para iniciar a I.A.",
+    "Como detectar quando o bebê está satisfeito",
+    "Quais alimentos podem ou não ser ofertados",
+    "Como montar os grupos de alimentos da refeição",
+    "Como usar os temperos e dar sabor aos alimentos",
+    "Os alimentos com maiores chances de causar alergias",
+    "Quais líquidos podemos ofertar e quando",
+    "Como organizar sua rotina com relação às refeições",
+    "Como montar o calendário de alimentação",
+    "E muito mais!",
   ];
 
   return (
@@ -23,13 +30,9 @@ export const EbookDetailsSection = () => {
               <span className="text-ebook-primary">Guia de Introdução Alimentar</span>
             </h2>
             
-            <p className="text-lg text-ebook-text/80">
-              Um guia completo e prático, desenvolvido por especialistas em nutrição infantil
-            </p>
-
             <div className="space-y-4">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div key={index} className="flex items-center space-x-4">
                   <CheckCircle className="text-ebook-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-ebook-text">{feature}</p>
                 </div>
@@ -44,15 +47,15 @@ export const EbookDetailsSection = () => {
                 <h3 className="text-2xl font-bold text-ebook-text mb-4">
                   Guia de Introdução Alimentar
                 </h3>
-                <div className="w-full h-48 bg-ebook-secondary rounded-lg flex items-center justify-center">
+                <div className="w-full h-full bg-ebook-secondary rounded-lg flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop&crop=center"
+                    src="/img/image17.png"
                     alt="Capa do eBook"
-                    className="w-32 h-32 object-cover rounded-full"
+                    className=""
                   />
                 </div>
                 <p className="text-ebook-text/70 text-sm mt-4">
-                  Formato PDF • 120 páginas • Acesso imediato
+                  Formato PDF • 15 Capítulos • Acesso imediato
                 </p>
               </div>
             </div>

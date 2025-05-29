@@ -17,8 +17,8 @@ export const FAQSection = () => {
       answer: "Sim! O guia foi criado pensando especialmente em pais de primeira viagem. Todas as orientações são explicadas de forma clara e didática, com linguagem acessível."
     },
     {
-      question: "Como recebo o eBook?",
-      answer: "Após a confirmação do pagamento, você receberá um email com o link para download imediato do eBook em formato PDF."
+      question: "Como recebo o E-Book?",
+      answer: "Após a confirmação do pagamento, você receberá o acesso pela plataforma da Hotmart. A senha para abrir os e-books é o seu EMAIL."
     },
     {
       question: "Posso usar em dispositivos móveis?",
@@ -26,7 +26,7 @@ export const FAQSection = () => {
     },
     {
       question: "O guia inclui receitas?",
-      answer: "Sim! O guia contém mais de 50 receitas nutritivas e adequadas para cada fase do desenvolvimento do bebê, todas testadas e aprovadas por nutricionistas."
+      answer: "Sim! O guia contém mais de 50 receitas nutritivas e adequadas para cada fase do desenvolvimento do bebê, todas testadas, aprovadas por centenas de mamães e seguindo as recomendações oficiais de saúde."
     }
   ];
 

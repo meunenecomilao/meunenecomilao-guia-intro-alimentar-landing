@@ -3,12 +3,15 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, ShoppingCart } from 'lucide-react';
 
+import data from '@/data.json';
+
 export const PricingSection = () => {
   const bonuses = [
-    "Lista de Compras para Bebês",
-    "Guia de Utensílios Essenciais", 
-    "Receitas para Toda a Família",
-    "Suporte por Email"
+    "E-Book Guia de Introdução Alimentar",
+    "E-Book de Cortes Seguros", 
+    "E-Book de Ideias de Pratinhos",
+    "E-Book de Receitas para Bebês",
+    "Grupo Exclusivo no WhatsApp",
   ];
 
   return (
@@ -30,10 +33,10 @@ export const PricingSection = () => {
                 Oferta por Tempo Limitado
               </Badge>
               <div className="mb-4">
-                <span className="text-2xl text-ebook-text/50 line-through">R$ 89,90</span>
-                <span className="text-4xl font-bold text-ebook-primary ml-4">R$ 49,90</span>
+                <span className="text-2xl text-ebook-text/50 line-through">{data.pricing.from}</span>
+                <span className="text-4xl font-bold text-ebook-primary ml-4">{data.pricing.by}</span>
               </div>
-              <p className="text-ebook-text/70">Acesso imediato ao eBook + bônus</p>
+              <p className="text-ebook-text/70">Acesso imediato ao E-Book + bônus</p>
             </div>
 
             <div className="space-y-3 mb-8">
@@ -48,6 +51,7 @@ export const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-xl py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4"
+              onClick={() => window.open(data.buy_link, "_blank")}
             >
               <ShoppingCart className="mr-2" size={24} />
               Comprar Agora

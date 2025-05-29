@@ -2,25 +2,21 @@
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Ana, mãe do Pedro",
-      text: "Este guia me deu confiança para começar a introdução alimentar! As receitas são práticas e meu bebê adora.",
-      rating: 5
+      name: "Mickaele, mãe do Miguel",
+      image: "/img/image13.jpg"
     },
     {
-      name: "Carlos, pai da Sofia",
-      text: "Finalmente um guia completo que explica tudo de forma clara. Recomendo para todos os pais!",
-      rating: 5
+      name: "Rayana, mãe da Isis",
+      image: "/img/image14.jpg"
     },
     {
-      name: "Mariana, mãe do Lucas",
-      text: "O cronograma por idade facilitou muito minha vida. Agora sei exatamente o que oferecer e quando.",
-      rating: 5
+      name: "Ana, mãe da Sofia",
+      image: "/img/image15.jpg"
     },
     {
-      name: "Roberto, pai da Júlia",
-      text: "As dicas de segurança me tranquilizaram muito. Sinto que estou oferecendo o melhor para minha filha.",
-      rating: 5
-    }
+      name: "Melissa, mãe da Helena",
+      image: "/img/image16.jpg"
+    },
   ];
 
   return (
@@ -28,7 +24,7 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-ebook-text mb-4">
-            O Que Outros Pais Estão Dizendo
+            O Que Outras Mamães Estão Dizendo
           </h2>
           <p className="text-lg text-ebook-text/70">
             Depoimentos reais de famílias que transformaram a alimentação dos seus bebês
@@ -38,14 +34,11 @@ export const TestimonialsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-ebook-background p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-ebook-primary text-lg">★</span>
-                ))}
-              </div>
-              <p className="text-ebook-text mb-4 italic">
-                "{testimonial.text}"
-              </p>
+              <img 
+                  src={testimonial.image} 
+                  alt={testimonial.name} 
+                  className="mx-auto mb-4 object-cover"
+                />
               <p className="text-ebook-primary font-semibold">
                 - {testimonial.name}
               </p>

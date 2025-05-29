@@ -1,17 +1,11 @@
 
 import { Button } from '@/components/ui/button';
 
+import data from '@/data.json';
+
 export const FinalCTASection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-ebook-secondary to-ebook-background relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 opacity-10">
-        <img 
-          src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=1200&h=800&fit=crop&crop=center"
-          alt="Alimentos saudáveis para bebês"
-          className="w-full h-full object-cover"
-        />
-      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -27,7 +21,7 @@ export const FinalCTASection = () => {
 
           <div className="space-y-4 mb-8">
             <p className="text-lg text-ebook-text">
-              ⏰ <strong>Mais de 1.500 pais já baixaram</strong>
+              ⏰ <strong>Centenas de mamães seguem o @meunenecomilao</strong>
             </p>
             <p className="text-lg text-ebook-text">
               🔒 <strong>Compra 100% segura e garantida</strong>
@@ -40,8 +34,9 @@ export const FinalCTASection = () => {
           <Button 
             size="lg" 
             className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-2xl px-12 py-8 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+            onClick={() => window.open(data.buy_link, "_blank")}
           >
-            Baixe Agora por R$ 49,90
+            Adquira Agora por {data.pricing.by}
           </Button>
 
           <p className="text-sm text-ebook-text/60 mt-4">

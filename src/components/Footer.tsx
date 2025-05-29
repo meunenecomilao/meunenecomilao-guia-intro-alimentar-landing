@@ -1,22 +1,14 @@
+import { Mail, Instagram } from 'lucide-react';
+
+
+import data from '@/data.json';
 
 export const Footer = () => {
-  const links = [
-    "Sobre Nós",
-    "Contato", 
-    "Política de Privacidade",
-    "Termos de Uso"
-  ];
-
-  const socialLinks = [
-    { name: "Instagram", icon: "📱" },
-    { name: "Facebook", icon: "📘" },
-    { name: "WhatsApp", icon: "💬" }
-  ];
 
   return (
     <footer className="bg-ebook-text py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-ebook-background">
@@ -27,25 +19,6 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-ebook-background">
-              Links Úteis
-            </h4>
-            <ul className="space-y-2">
-              {links.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href="#" 
-                    className="text-ebook-background/70 hover:text-ebook-primary transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-ebook-background">
@@ -53,20 +26,19 @@ export const Footer = () => {
             </h4>
             <div className="space-y-2">
               <p className="text-ebook-background/70">
-                📧 contato@guiaalimentar.com
+                <Mail className="inline mr-2 text-ebook-primary" size={20} /> {data.contacts.email}
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a 
-                    key={index}
-                    href="#"
-                    className="text-ebook-primary hover:text-ebook-primary/80 transition-colors text-xl"
-                    title={social.name}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
+              <p className="text-ebook-background/70">
+                <Instagram className="inline mr-2 text-ebook-primary" size={20} />
+                <a
+                  href={data.contacts.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  @meunenecomilao
+                </a>
+              </p>
             </div>
           </div>
         </div>

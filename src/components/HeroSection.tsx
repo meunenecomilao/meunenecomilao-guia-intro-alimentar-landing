@@ -2,6 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
+import data from '@/data.json';
+
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-ebook-secondary to-ebook-background overflow-hidden">
@@ -10,24 +12,25 @@ export const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <Badge className="bg-ebook-secondary text-ebook-text border-ebook-primary">
-              Aprovado por Nutricionistas
+              Aprovado por centenas de mamães!
             </Badge>
             
             <h1 className="text-4xl md:text-6xl font-bold text-ebook-text leading-tight">
               Transforme a{' '}
               <span className="text-ebook-primary">Introdução Alimentar</span>{' '}
-              do Seu Bebê com o Guia Definitivo!
+              do Seu Bebê com este Guia Definitivo!
             </h1>
             
             <p className="text-xl text-ebook-text/80 leading-relaxed">
-              Descubra como oferecer uma alimentação saudável e segura para bebês de 6 meses a 2 anos.
+              Descubra como oferecer uma alimentação saudável e segura para seu bebê de 6 meses a 2 anos. Conteúdo 100% digital, embasado nas recomendações oficiais da OMS.
             </p>
             
             <Button 
               size="lg" 
               className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.open(data.buy_link, "_blank")}
             >
-              Baixe o Guia Agora
+              Adquira o Guia Agora
             </Button>
           </div>
           
@@ -35,9 +38,9 @@ export const HeroSection = () => {
           <div className="relative animate-fade-in">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=600&fit=crop&crop=center"
+                src="/img/image12.jpg"
                 alt="Bebê feliz comendo alimentos saudáveis"
-                className="w-full h-96 object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ebook-primary/20 to-transparent"></div>
             </div>
