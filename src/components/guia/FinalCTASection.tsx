@@ -1,6 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 
+import { onClickBuyGuia } from "./_handlers"
 import data from '@/data.json';
 
 export const FinalCTASection = () => {
@@ -34,7 +35,7 @@ export const FinalCTASection = () => {
           <Button 
             size="lg" 
             className="bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-2xl px-12 py-8 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open(data.guia.buy_link, "_blank")}
+            onClick={() => onClickBuyGuia()}
           >
             Adquira por {data.guia.pricing.by}
           </Button>

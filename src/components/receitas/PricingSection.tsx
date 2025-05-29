@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, ShoppingCart } from 'lucide-react';
+import { onClickBuyReceitas } from "./_handlers"
 
 import data from '@/data.json';
 
@@ -50,7 +51,7 @@ export const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-ebook-primary hover:bg-ebook-primary/90 text-ebook-background text-xl py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4"
-              onClick={() => window.open(data.receitas.buy_link, "_blank")}
+              onClick={() => onClickBuyReceitas()}
             >
               <ShoppingCart className="mr-2" size={24} />
               Comprar Agora

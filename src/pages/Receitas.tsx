@@ -8,8 +8,17 @@ import { FAQSection } from '@/components/receitas/FAQSection';
 import { AuthorSection } from '@/components/shared/AuthorSection';
 import { FinalCTASection } from '@/components/receitas/FinalCTASection';
 import { Footer } from '@/components/shared/Footer';
+import { trackPageView } from "@/lib/google-analytics"
 
-const Guia = () => {
+import { useEffect } from 'react';
+
+
+const Receitas = () => {
+  useEffect(() => {
+    document.title = 'E-Book de Receitas Meu Nene Comilão';
+    trackPageView('receitas');
+  }, []);
+
   return (
     <div className="min-h-screen bg-ebook-background">
       <HeroSection />
@@ -25,4 +34,4 @@ const Guia = () => {
   );
 };
 
-export default Guia;
+export default Receitas;

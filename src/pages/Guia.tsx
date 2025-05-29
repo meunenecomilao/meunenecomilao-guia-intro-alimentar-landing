@@ -9,8 +9,15 @@ import { FAQSection } from '@/components/guia/FAQSection';
 import { AuthorSection } from '@/components/shared/AuthorSection';
 import { FinalCTASection } from '@/components/guia/FinalCTASection';
 import { Footer } from '@/components/shared/Footer';
+import { useEffect } from 'react';
+import { trackPageView } from "@/lib/google-analytics"
 
 const Guia = () => {
+  useEffect(() => {
+    document.title = 'E-Book Guia de Introdução Alimentar Meu Nene Comilão';
+    trackPageView('guia');
+  }, []);
+
   return (
     <div className="min-h-screen bg-ebook-background">
       <HeroSection />
