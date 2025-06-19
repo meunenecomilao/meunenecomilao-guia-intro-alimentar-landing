@@ -2,8 +2,6 @@
 import { Button } from '@/components/ui/button';
 import { onClickBuyGuia } from "./_handlers"
 
-import data from '@/data.json';
-
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-ebook-secondary to-ebook-background overflow-hidden">
