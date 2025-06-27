@@ -9,9 +9,8 @@ import data from '@/data.json';
 export const PricingSection = () => {
   const bonuses = [
     "E-Book com mais de 60 Receitas",
-    "E-Book de Cortes Seguros", 
-    "E-Book de Ideias de Pratinhos",
     "Grupo Exclusivo no WhatsApp",
+    "Acesso gratuito a novas receitas"
   ];
 
   return (
