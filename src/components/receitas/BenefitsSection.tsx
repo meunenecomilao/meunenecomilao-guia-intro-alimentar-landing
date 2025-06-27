@@ -20,9 +20,23 @@ export const BenefitsSection = () => {
       title: "Variedades",
       description: "Você vai encontrar bolinhos, risotos, panquecas e muitas outras opções para café da manhã, almoço, lanche e janta!",
       color: "text-ebook-primary"
-    },
-    
+    }
   ];
+
+  const bonusEbooks = [
+    {
+      image: "/img/image18.jpg",
+      title: "+ de 20 Cortes Seguros",
+      description: "Saiba como cortar os alimentos da forma correta para evitar o engasgo.",
+      color: "text-ebook-primary"
+    },
+    {
+      image: "/img/image19.jpg",
+      title: "+ de 30 Ideias para Pratinhos",
+      description: "Aprenda a montar o pratinho compondo os grupos alimentares para evitar um paladar seletivo.",
+      color: "text-ebook-primary"
+    }
+  ]
 
   return (
     <section className="py-20 bg-ebook-background">
@@ -35,6 +49,33 @@ export const BenefitsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
+            <div key={index} className="text-center rounded-2xl bg-gradient-to-b from-ebook-background to-ebook-secondary/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="mb-6 rounded-t-2xl overflow-hidden">
+                <img 
+                  src={benefit.image} 
+                  alt={benefit.title} 
+                  className="mx-auto mb-2 w-full h-72 object-cover"
+                />
+                {/* <benefit.icon className={`mx-auto ${benefit.color}`} size={48} /> */}
+              </div>
+              <div className='p-8 pt-0'>
+                <h3 className="text-xl font-semibold text-ebook-text mb-4">
+                  {benefit.title}
+                </h3>
+                <div className="text-ebook-text/70">
+                  {benefit.description}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mb-16 mt-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-ebook-text mb-4">
+            Além disso, você receberá dois bônus incríveis!
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {bonusEbooks.map((benefit, index) => (
             <div key={index} className="text-center rounded-2xl bg-gradient-to-b from-ebook-background to-ebook-secondary/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="mb-6 rounded-t-2xl overflow-hidden">
                 <img 
